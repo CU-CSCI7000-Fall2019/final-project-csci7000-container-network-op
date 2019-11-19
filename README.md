@@ -32,3 +32,13 @@ Deploying FreeFlow would require RDMA enabled NICs, so having a cloud environmen
 
 [https://github.com/microsoft/Freeflow](https://github.com/microsoft/Freeflow)
 
+
+## Update 2019-11-19
+
+
+Created a [check list](https://github.com/CU-CSCI7000-Fall2019/final-project-csci7000-container-network-op/issues/1) for progress
+
+The OpenStudio-server deployment configs have been successfully converted to use Kubernetes. Currently, these are statically defined in .yaml configs but initial work
+has been done to use k8s deployment manager - Helm.  The static defined configs have been tested on AWS EKS and run successfully. Now that the groundwork has been laid, the next steps are to experiment with specialized cloud hardware that can support RDMA to use FreeFlow and/or use Slim be modifying the VM host containers that run the k8s cluster.
+
+
