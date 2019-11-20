@@ -32,6 +32,14 @@ Deploying FreeFlow would require RDMA enabled NICs, so having a cloud environmen
 
 [https://github.com/microsoft/Freeflow](https://github.com/microsoft/Freeflow)
 
+## Timelime 
+
+Now that the OpenStudio-server deployment configs have been updated to run within a k8s environment, I can begin testing out RDMA and Slim in attempt to improve network I/O. Within the semester ends I should have enough time to get one of the two options (Freeflow and/or Slim) to evaluate performance  improvements it relates to network latency, throughput and resource (cpu) consumption.
+
+## Concerns 
+
+The main concern is finding a cloud provider that offers RDMA enabled NICs to run implement FreeFlow.  Slim requires access to the underlining VM, which I believe can be done using k8s provisioned VMs and then making modifications.  If that doesn't work I might have to use custom VMs and install k8s manually to implement Slim.
+
 
 ## Update 2019-11-19
 
